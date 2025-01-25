@@ -1,3 +1,5 @@
-﻿namespace Animals.Application.Domain.Animals.Queries.GetAnimalsByName;
+﻿using MediatR;
 
-public record GetAnimalsByNameQuery();
+namespace Animals.Application.Domain.Animals.Queries.GetAnimalsByName;
+
+public record GetAnimalsByNameQuery(string Name) : IRequest<List<AnimalsByNameDto>>;

@@ -6,6 +6,7 @@ using Animals.Application.Domain.Animals.Commands.DeleteAnimal;
 using Animals.Application.Domain.Animals.Commands.UpdateAnimal;
 using Animals.Application.Domain.Animals.Queries.GetAnimalDetails;
 using Animals.Application.Domain.Animals.Queries.GetAnimals;
+using Animals.Application.Domain.Animals.Queries.GetAnimalsByName;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -36,14 +37,25 @@ namespace Animals.Api.Domain.Animals
             return Ok(good);
         }
 
+        [HttpGet("get-by-name/{name}")]
+        public async Task<ActionResult> GetAnimalsByName(
+            [FromRoute] string name,
+            CancellationToken cancellationToken = default
+        )
+        {
+            var query = new GetAnimalsByNameQuery(name);
+            var animalsByName = await mediator.Send(query, cancellationToken);
+            return Ok(animalsByName);
+        }
+
         [HttpPost]
         public async Task<ActionResult> AddAnimal(
             [FromBody] [Required] CreateAnimalRequest request,
             CancellationToken cancellationToken = default)
         {
             var command = new CreateAnimalCommand(
-                request.Name, 
-                request.Age, 
+                request.Name,
+                request.Age,
                 request.Description);
             var id = await mediator.Send(command, cancellationToken);
             return Ok(id);

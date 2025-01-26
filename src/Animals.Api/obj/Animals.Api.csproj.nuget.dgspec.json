@@ -1,0 +1,383 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Api/Animals.Api.csproj": {}
+  },
+  "projects": {
+    "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Api/Animals.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Api/Animals.Api.csproj",
+        "projectName": "Animals.Api",
+        "projectPath": "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Api/Animals.Api.csproj",
+        "packagesPath": "/Users/alexanderkovalchuk/.nuget/packages/",
+        "outputPath": "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/alexanderkovalchuk/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Application/Animals.Application.csproj": {
+                "projectPath": "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Application/Animals.Application.csproj"
+              },
+              "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Infrastructure/Animals.Infrastructure.csproj": {
+                "projectPath": "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Infrastructure/Animals.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/alexanderkovalchuk/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Application/Animals.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Application/Animals.Application.csproj",
+        "projectName": "Animals.Application",
+        "projectPath": "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Application/Animals.Application.csproj",
+        "packagesPath": "/Users/alexanderkovalchuk/.nuget/packages/",
+        "outputPath": "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/alexanderkovalchuk/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Core/Animals.Core.csproj": {
+                "projectPath": "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Core/Animals.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/alexanderkovalchuk/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Core/Animals.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Core/Animals.Core.csproj",
+        "projectName": "Animals.Core",
+        "projectPath": "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Core/Animals.Core.csproj",
+        "packagesPath": "/Users/alexanderkovalchuk/.nuget/packages/",
+        "outputPath": "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/alexanderkovalchuk/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/alexanderkovalchuk/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Infrastructure/Animals.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Infrastructure/Animals.Infrastructure.csproj",
+        "projectName": "Animals.Infrastructure",
+        "projectPath": "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Infrastructure/Animals.Infrastructure.csproj",
+        "packagesPath": "/Users/alexanderkovalchuk/.nuget/packages/",
+        "outputPath": "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/alexanderkovalchuk/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Application/Animals.Application.csproj": {
+                "projectPath": "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Application/Animals.Application.csproj"
+              },
+              "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Core/Animals.Core.csproj": {
+                "projectPath": "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Core/Animals.Core.csproj"
+              },
+              "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Persistence/Animals.Persistence.csproj": {
+                "projectPath": "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Persistence/Animals.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/alexanderkovalchuk/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Persistence/Animals.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Persistence/Animals.Persistence.csproj",
+        "projectName": "Animals.Persistence",
+        "projectPath": "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Persistence/Animals.Persistence.csproj",
+        "packagesPath": "/Users/alexanderkovalchuk/.nuget/packages/",
+        "outputPath": "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Persistence/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/alexanderkovalchuk/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Core/Animals.Core.csproj": {
+                "projectPath": "/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Core/Animals.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/alexanderkovalchuk/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

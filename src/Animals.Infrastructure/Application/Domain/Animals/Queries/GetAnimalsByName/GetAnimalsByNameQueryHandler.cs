@@ -21,6 +21,7 @@ public class GetAnimalsByNameQueryHandler(IAnimalsDataProvider animalsDataProvid
                 Age = animal.Age,
                 Description = animal.Description
             }).ToList();
+
         return result;
     }
 }

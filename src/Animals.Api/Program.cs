@@ -1,6 +1,6 @@
+using _5Layers.Animals.Persistence.EFCore.AnimalsDb;
 using Animals.Application;
 using Animals.Infrastructure;
-using Animals.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +13,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices();
-builder.Services.AddPersistenceServices();
+builder.Services.RegisterAnimalsDbContext(builder.Configuration);
 
 var app = builder.Build();
 

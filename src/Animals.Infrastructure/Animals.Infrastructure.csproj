@@ -7,9 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\5Layers.Animals.Persistence.EFCore\Animals.Persistence.EFCore.csproj" />
     <ProjectReference Include="..\Animals.Application\Animals.Application.csproj" />
     <ProjectReference Include="..\Animals.Core\Animals.Core.csproj" />
-    <ProjectReference Include="..\Animals.Persistence\Animals.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

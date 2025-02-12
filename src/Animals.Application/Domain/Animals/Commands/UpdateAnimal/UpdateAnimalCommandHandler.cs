@@ -1,18 +1,22 @@
-﻿using Animals.Core.Domain.Common;
-using Animals.Core.Domain.Data;
+﻿using Animals.Core.Common;
+using Animals.Core.Domain.Animals.Common;
+using Animals.Core.Domain.Animals.Data;
 using MediatR;
 
 namespace Animals.Application.Domain.Animals.Commands.UpdateAnimal;
 
-internal class UpdateAnimalCommandHandler(IAnimalsRepository animalsRepository) : IRequestHandler<UpdateAnimalCommand>
+internal class UpdateAnimalCommandHandler(
+    IAnimalsRepository animalsRepository,
+    IUnitOfWork unitOfWork
+    ) : IRequestHandler<UpdateAnimalCommand>
 {
     public async Task Handle(
         UpdateAnimalCommand command,
         CancellationToken cancellationToken)
     {
-        var animal = await animalsRepository.GetById(command.Id);
+        var animal = await animalsRepository.GetById(command.Id, cancellationToken);
         var data = new UpdateAnimalData(command.Name, command.Age, command.Description);
         animal.Update(data);
-        animalsRepository.Update(animal);
+        await unitOfWork.SaveChangesAsync(cancellationToken);
     }
 }

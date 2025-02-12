@@ -1,15 +1,3 @@
-/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro-data/5Layers.Animals/src/Animals.Core/bin/Debug/net8.0/Animals.Core.deps.json
-/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro-data/5Layers.Animals/src/Animals.Core/bin/Debug/net8.0/Animals.Core.dll
-/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro-data/5Layers.Animals/src/Animals.Core/bin/Debug/net8.0/Animals.Core.pdb
-/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro-data/5Layers.Animals/src/Animals.Core/obj/Debug/net8.0/Animals.Core.csproj.AssemblyReference.cache
-/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro-data/5Layers.Animals/src/Animals.Core/obj/Debug/net8.0/Animals.Core.GeneratedMSBuildEditorConfig.editorconfig
-/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro-data/5Layers.Animals/src/Animals.Core/obj/Debug/net8.0/Animals.Core.AssemblyInfoInputs.cache
-/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro-data/5Layers.Animals/src/Animals.Core/obj/Debug/net8.0/Animals.Core.AssemblyInfo.cs
-/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro-data/5Layers.Animals/src/Animals.Core/obj/Debug/net8.0/Animals.Core.csproj.CoreCompileInputs.cache
-/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro-data/5Layers.Animals/src/Animals.Core/obj/Debug/net8.0/Animals.Core.dll
-/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro-data/5Layers.Animals/src/Animals.Core/obj/Debug/net8.0/refint/Animals.Core.dll
-/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro-data/5Layers.Animals/src/Animals.Core/obj/Debug/net8.0/Animals.Core.pdb
-/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro-data/5Layers.Animals/src/Animals.Core/obj/Debug/net8.0/ref/Animals.Core.dll
 /Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Core/bin/Debug/net8.0/Animals.Core.deps.json
 /Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Core/bin/Debug/net8.0/Animals.Core.dll
 /Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/Animals.Core/bin/Debug/net8.0/Animals.Core.pdb

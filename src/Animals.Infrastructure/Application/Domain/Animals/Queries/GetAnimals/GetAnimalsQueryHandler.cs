@@ -1,41 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using _5Layers.Animals.Persistence.EFCore.AnimalsDb;
 using Animals.Application.Common;
 using Animals.Application.Domain.Animals.Queries.GetAnimals;
-using Animals.Core.Domain.Common;
-using Animals.Core.Domain.Models;
-using Animals.Persistence.Core.Animals.DataProvider;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using AnimalDto = Animals.Application.Domain.Animals.Queries.GetAnimals.AnimalDto;
 
-namespace Animals.Infrastructure.Application.Domain.Animals.Queries.GetAnimals
+namespace Animals.Infrastructure.Application.Domain.Animals.Queries.GetAnimals;
+
+internal class GetAnimalsQueryHandler(AnimalsDbContext dbContext) 
+    : IRequestHandler<GetAnimalsQuery, PageResponse<AnimalDto[]>>
 {
-    internal class GetAnimalsQueryHandler(IAnimalsDataProvider animalsDataProvider) 
-        : IRequestHandler<GetAnimalsQuery, PageResponse<AnimalDto[]>>
+    public async Task<PageResponse<AnimalDto[]>> Handle(
+        GetAnimalsQuery query,
+        CancellationToken cancellationToken)
     {
-        public async Task<PageResponse<AnimalDto[]>> Handle(
-            GetAnimalsQuery query,
-            CancellationToken cancellationToken)
-        {
-            var skip = query.PageSize * (query.Page - 1);
+        var skip = query.PageSize * (query.Page - 1);
+        var sqlQuery = dbContext
+            .Animals
+            .AsNoTracking();
 
-            var animals = await animalsDataProvider.GetAll();
-
-            var count = animals.Count();
-
-            var result = animals
-                .Skip(skip)
-                .Take(query.PageSize)
-                .Select(a => new AnimalDto(
-                    a.Id,
-                    a.Name, 
-                    a.Age))
-                .ToArray();
-
-            return new PageResponse<AnimalDto[]>(count, result);
-        }
+        var count = sqlQuery.Count();
+            
+        var animals = await sqlQuery
+            .OrderBy(a => a.Name)
+            .Skip(skip)
+            .Take(query.PageSize)
+            .Select(x => new AnimalDto(
+                x.Id,
+                x.Name,
+                x.Age))
+            .ToArrayAsync(cancellationToken);
+            
+        return new PageResponse<AnimalDto[]>(count, animals);
     }
 }

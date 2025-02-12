@@ -1,11 +1,14 @@
-﻿using Animals.Core.Domain.Common;
-using Animals.Core.Domain.Data;
-using Animals.Core.Domain.Models;
+﻿using Animals.Core.Common;
+using Animals.Core.Domain.Animals.Common;
+using Animals.Core.Domain.Animals.Data;
+using Animals.Core.Domain.Animals.Models;
 using MediatR;
 
 namespace Animals.Application.Domain.Animals.Commands.CreateAnimal;
 
-internal class CreateAnimalCommandHandler(IAnimalsRepository animalsRepository) : IRequestHandler<CreateAnimalCommand, Guid>
+internal class CreateAnimalCommandHandler(
+    IAnimalsRepository animalsRepository,
+    IUnitOfWork unitOfWork) : IRequestHandler<CreateAnimalCommand, Guid>
 {
     public async Task<Guid> Handle(
         CreateAnimalCommand command, 
@@ -16,7 +19,7 @@ internal class CreateAnimalCommandHandler(IAnimalsRepository animalsRepository) 
         var animal = Animal.Create(data);
 
         animalsRepository.Add(animal);
-
+        await unitOfWork.SaveChangesAsync(cancellationToken);
         return animal.Id;
     }
 }

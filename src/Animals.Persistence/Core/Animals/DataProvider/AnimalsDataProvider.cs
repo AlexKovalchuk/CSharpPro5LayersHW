@@ -1,5 +1,5 @@
 ﻿using System.Text.Json;
-using Animals.Core.Domain.Models;
+using Animals.Core.Domain.Animals.Models;
 
 namespace Animals.Persistence.Core.Animals.DataProvider;
 

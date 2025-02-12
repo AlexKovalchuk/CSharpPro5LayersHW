@@ -1,9 +1,9 @@
-﻿using Animals.Core.Domain.Common;
-using Animals.Core.Domain.Models;
-using Animals.Persistence.Core.Animals.DataProvider;
+﻿
+//using Animals.Persistence.Core.Animals.DataProvider;
 
 namespace Animals.Infrastructure.Core.Domain.Animals.Common;
 
+/*
 public class AnimalsRepository(IAnimalsDataProvider animalsDataProvider) : IAnimalsRepository
 {
     public async Task<Animal> GetById(Guid id)
@@ -36,3 +36,4 @@ public class AnimalsRepository(IAnimalsDataProvider animalsDataProvider) : IAnim
         await animalsDataProvider.Delete(animal);
     }
 }
+*/

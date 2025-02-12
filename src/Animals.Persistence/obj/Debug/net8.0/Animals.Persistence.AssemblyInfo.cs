@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Animals.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6513fcd02752f59cb90728d9db2e456d6dbabff")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40f40d4a4fc954e30209188687af4a5555741f2d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Animals.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Animals.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,16 @@
+/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/5Layers.Animals.Persistence.EFCore/bin/Debug/net8.0/Animals.Persistence.EFCore.deps.json
+/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/5Layers.Animals.Persistence.EFCore/bin/Debug/net8.0/Animals.Persistence.EFCore.dll
+/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/5Layers.Animals.Persistence.EFCore/bin/Debug/net8.0/Animals.Persistence.EFCore.pdb
+/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/5Layers.Animals.Persistence.EFCore/bin/Debug/net8.0/Animals.Core.dll
+/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/5Layers.Animals.Persistence.EFCore/bin/Debug/net8.0/Animals.Core.pdb
+/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/5Layers.Animals.Persistence.EFCore/obj/Debug/net8.0/Animals.Persistence.EFCore.csproj.AssemblyReference.cache
+/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/5Layers.Animals.Persistence.EFCore/obj/Debug/net8.0/Animals.Persistence.EFCore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/5Layers.Animals.Persistence.EFCore/obj/Debug/net8.0/Animals.Persistence.EFCore.AssemblyInfoInputs.cache
+/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/5Layers.Animals.Persistence.EFCore/obj/Debug/net8.0/Animals.Persistence.EFCore.AssemblyInfo.cs
+/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/5Layers.Animals.Persistence.EFCore/obj/Debug/net8.0/Animals.Persistence.EFCore.csproj.CoreCompileInputs.cache
+/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/5Layers.Animals.Persistence.EFCore/obj/Debug/net8.0/Animals.Persistence.EFCore.sourcelink.json
+/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/5Layers.Animals.Persistence.EFCore/obj/Debug/net8.0/Animals..2EEB9CAA.Up2Date
+/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/5Layers.Animals.Persistence.EFCore/obj/Debug/net8.0/Animals.Persistence.EFCore.dll
+/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/5Layers.Animals.Persistence.EFCore/obj/Debug/net8.0/refint/Animals.Persistence.EFCore.dll
+/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/5Layers.Animals.Persistence.EFCore/obj/Debug/net8.0/Animals.Persistence.EFCore.pdb
+/Users/alexanderkovalchuk/Documents/Learning/Hillel/csharp-pro/CSharpProWebHW/5Layers.Animals/src/5Layers.Animals.Persistence.EFCore/obj/Debug/net8.0/ref/Animals.Persistence.EFCore.dll

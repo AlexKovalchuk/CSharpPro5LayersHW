@@ -7,8 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Domain\Common\" />
-    <Folder Include="Domain\Data\" />
+    <Folder Include="Domain\Animals\Common\" />
+    <Folder Include="Domain\Animals\Data\" />
+    <Folder Include="Domain\Owners\Data\" />
   </ItemGroup>
 
   <ItemGroup>

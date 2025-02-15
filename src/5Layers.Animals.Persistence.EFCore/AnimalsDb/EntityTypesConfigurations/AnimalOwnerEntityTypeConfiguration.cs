@@ -9,13 +9,5 @@ public class AnimalOwnerEntityTypeConfiguration : IEntityTypeConfiguration<Anima
     public void Configure(EntityTypeBuilder<AnimalOwner> builder)
     {
         builder.HasKey(x => new { x.AnimalId, x.OwnerId });
-
-       /* builder.HasOne(x => x.Animal)
-            .WithMany(x => x.Owners)
-            .HasForeignKey(x => x.AnimalId);
-
-        builder.HasOne(x => x.Owner)
-            .WithMany(x => x.Animals)
-            .HasForeignKey(x => x.OwnerId);*/
     }
 }

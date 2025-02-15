@@ -12,7 +12,7 @@ using _5Layers.Animals.Persistence.EFCore.AnimalsDb;
 namespace _5Layers.Animals.Persistence.EFCore.AnimalsDb.Migrations
 {
     [DbContext(typeof(AnimalsDbContext))]
-    [Migration("20250210170408_AddAnimalOwnerEntityMigration")]
+    [Migration("20250213175526_AddAnimalOwnerEntityMigration")]
     partial class AddAnimalOwnerEntityMigration
     {
         /// <inheritdoc />

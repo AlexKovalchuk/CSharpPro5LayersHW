@@ -11,6 +11,7 @@ public class AnimalsEFCoreRepository(AnimalsDbContext dbContext) : IAnimalsRepos
     {
         return await dbContext
             .Animals
+            .Include(x=>x.Owners)
             .Where(x => x.Id == id)
             .FirstOrDefaultAsync(cancellationToken) ?? throw new InvalidOperationException("Animal was not found");
     }

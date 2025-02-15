@@ -11,10 +11,10 @@ public class Owner
 
     private Owner(
         Guid id,
-        string firstName, 
+        string firstName,
         string lastName,
         string? middleName,
-        string email, 
+        string email,
         string phoneNumber)
     {
         Id = id;
@@ -49,5 +49,14 @@ public class Owner
             data.Email,
             data.PhoneNumber
         );
+    }
+
+    public void Update(UpdateOwnerData data)
+    {
+        FirstName = data.FirstName;
+        LastName = data.LastName;
+        MiddleName = data.MiddleName;
+        Email = data.Email;
+        PhoneNumber = data.PhoneNumber;
     }
 }

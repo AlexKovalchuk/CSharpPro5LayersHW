@@ -1,5 +1,4 @@
 ﻿using System.Runtime.CompilerServices;
-using System.Xml.Schema;
 using Animals.Core.Common;
 using Animals.Core.Domain.Animals.Data;
 using Animals.Core.Domain.Owners.Models;
@@ -67,12 +66,12 @@ public class Animal : IAggregateRoot
         }
     }
 
-    public void AssignOwner(Owner[] owners)
+    public void RemoveOwner(Owner owner)
     {
-        var animalOwners = owners
-            .Where( o => _owners.All(x => x.OwnerId != o.Id))
-            .Select(owner => AnimalOwner.Create(Id, owner.Id));
-
-        _owners.AddRange(animalOwners);
+        var ao = _owners.FirstOrDefault(x => x.OwnerId == owner.Id);
+        if (ao is not null)
+        {
+            _owners.Remove(ao);
+        }
     }
 }

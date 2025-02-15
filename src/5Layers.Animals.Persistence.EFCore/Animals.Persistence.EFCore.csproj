@@ -16,8 +16,4 @@
     <ProjectReference Include="..\Animals.Core\Animals.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="AnimalsDb\Migrations\" />
-  </ItemGroup>
-
 </Project>

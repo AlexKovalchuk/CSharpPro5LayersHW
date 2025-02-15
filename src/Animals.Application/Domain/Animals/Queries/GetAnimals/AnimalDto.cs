@@ -3,4 +3,5 @@
 public record AnimalDto(
     Guid Id,
     string Name,
-    int Age);
+    int Age,
+    OwnerDto[]? Owners);

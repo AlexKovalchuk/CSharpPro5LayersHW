@@ -1,6 +1,7 @@
 using _5Layers.Animals.Persistence.EFCore.AnimalsDb;
 using Animals.Application;
 using Animals.Infrastructure;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +25,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// Apply migrations on startup
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<AnimalsDbContext>();
+
+    context.Database.Migrate();
+}
 app.UseAuthorization();
 
 app.MapControllers();

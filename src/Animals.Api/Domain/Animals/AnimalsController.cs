@@ -1,8 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Animals.Api.Constants;
 using Animals.Api.Domain.Animals.Records;
+using Animals.Application.Domain.Animals.Commands.AssignOwner;
 using Animals.Application.Domain.Animals.Commands.CreateAnimal;
 using Animals.Application.Domain.Animals.Commands.DeleteAnimal;
+using Animals.Application.Domain.Animals.Commands.RemoveOwner;
 using Animals.Application.Domain.Animals.Commands.UpdateAnimal;
 using Animals.Application.Domain.Animals.Queries.GetAnimalDetails;
 using Animals.Application.Domain.Animals.Queries.GetAnimals;
@@ -42,8 +44,8 @@ public class AnimalsController(
         CancellationToken cancellationToken = default)
     {
         var command = new CreateAnimalCommand(
-            request.Name, 
-            request.Age, 
+            request.Name,
+            request.Age,
             request.Description);
         var id = await mediator.Send(command, cancellationToken);
         return Ok(id);
@@ -70,6 +72,28 @@ public class AnimalsController(
         CancellationToken cancellationToken = default)
     {
         var command = new DeleteAnimalCommand(id);
+        await mediator.Send(command, cancellationToken);
+        return Ok();
+    }
+
+    [HttpPost("{id}/assign-owner")]
+    public async Task<ActionResult> AssignOwner(
+        [FromRoute] Guid id,
+        [FromBody][Required] Guid ownerId,
+        CancellationToken cancellationToken = default)
+    {
+        var command = new AssignOwnerCommand(id, ownerId);
+        await mediator.Send(command, cancellationToken);
+        return Ok();
+    }
+
+    [HttpPost("{id}/remove-owner")]
+    public async Task<ActionResult> RemoveOwner(
+        [FromRoute] Guid id,
+        [FromBody][Required] Guid ownerId,
+        CancellationToken cancellationToken = default)
+    {
+        var command = new RemoveOwnerCommand(id, ownerId);
         await mediator.Send(command, cancellationToken);
         return Ok();
     }

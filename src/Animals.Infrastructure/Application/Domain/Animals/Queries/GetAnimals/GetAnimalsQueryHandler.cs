@@ -7,20 +7,22 @@ using AnimalDto = Animals.Application.Domain.Animals.Queries.GetAnimals.AnimalDt
 
 namespace Animals.Infrastructure.Application.Domain.Animals.Queries.GetAnimals;
 
-internal class GetAnimalsQueryHandler(AnimalsDbContext dbContext) 
+internal class GetAnimalsQueryHandler(AnimalsDbContext dbContext)
     : IRequestHandler<GetAnimalsQuery, PageResponse<AnimalDto[]>>
 {
     public async Task<PageResponse<AnimalDto[]>> Handle(
         GetAnimalsQuery query,
         CancellationToken cancellationToken)
     {
-        var skip = query.PageSize * (query.Page - 1);
         var sqlQuery = dbContext
             .Animals
-            .AsNoTracking();
+            .AsNoTracking()
+            .Include(x=>x.Owners);
+
+        var skip = query.PageSize * (query.Page - 1);
 
         var count = sqlQuery.Count();
-            
+
         var animals = await sqlQuery
             .OrderBy(a => a.Name)
             .Skip(skip)
@@ -28,9 +30,11 @@ internal class GetAnimalsQueryHandler(AnimalsDbContext dbContext)
             .Select(x => new AnimalDto(
                 x.Id,
                 x.Name,
-                x.Age))
+                x.Age,
+                x.Owners.Select(o => new OwnerDto(o.Owner.FirstName, o.Owner.LastName)).ToArray()
+            ))
             .ToArrayAsync(cancellationToken);
-            
+
         return new PageResponse<AnimalDto[]>(count, animals);
     }
 }
